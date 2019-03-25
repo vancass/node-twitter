@@ -31,7 +31,7 @@ stdin.addListener("data", function (d) {
   // with toString() and then trim() 
 
   client.post('statuses/update', { status: d.toString().trim() })
-    .then(() => console.log('Sent!'))
+    .then(() => console.clear())
     .catch(function (error) {
       throw error;
     })
